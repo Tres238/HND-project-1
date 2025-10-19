@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+article[data-testid="test-profile-card"] {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+article img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+nav ul, section ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li, section li {
+  margin: 5px 0;
+}
+
+nav a {
+  color: #0b5b8a;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+/* Responsive Layout */
+@media (min-width: 500px) {
+  article[data-testid="test-profile-card"] {
+    width: 400px; /* slightly wider on tablets/desktops */
+    text-align: left; /* align text left */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+  }
+
+  article img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 0;
+  }
+
+  article div {
+    flex: 1;
+  }
+
+  nav ul, section ul {
+    display: flex;
+    gap: 10px;
+  }
+
+  nav li, section li {
+    margin: 0;
+  }
+}
+
+@media (max-width: 499px) {
+  article[data-testid="test-profile-card"] {
+    width: 90%; /* almost full width on mobile */
+    text-align: center;
+    display: block;
+  }
+}
