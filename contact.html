@@ -1,75 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | Frontend Wizards</title>
-  <link rel="stylesheet" href="contact.css">
-</head>
-<body>
-  <form id="contactForm" novalidate>
-    <h1>Contact Us</h1>
-
-    <label for="name">Full Name:</label>
-    <input id="name" data-testid="test-contact-name" type="text" required aria-describedby="error-name">
-    <p class="error" id="error-name" data-testid="test-contact-error-name"></p>
-
-    <label for="email">Email:</label>
-    <input id="email" data-testid="test-contact-email" type="email" required aria-describedby="error-email">
-    <p class="error" id="error-email" data-testid="test-contact-error-email"></p>
-
-    <label for="subject">Subject:</label>
-    <input id="subject" data-testid="test-contact-subject" type="text" required aria-describedby="error-subject">
-    <p class="error" id="error-subject" data-testid="test-contact-error-subject"></p>
-
-    <label for="message">Message:</label>
-    <textarea id="message" data-testid="test-contact-message" rows="5" required aria-describedby="error-message"></textarea>
-    <p class="error" id="error-message" data-testid="test-contact-error-message"></p>
-
-    <button type="submit" data-testid="test-contact-submit">Submit</button>
-    <p class="success" id="success" data-testid="test-contact-success"></p>
-  </form>
-
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Contact | Treasure Kenule Portfolio</title> 
+  <link rel="stylesheet" href="styles.css"> 
+ </head> 
+ <body> 
+  <header class="nav"> 
+   <ul> 
+    <li><a href="index.html">Home</a></li> 
+    <li><a href="about.html">About</a></li> 
+    <li><a href="contact.html" class="active">Contact</a></li> 
+   </ul> 
+  </header> 
+  <main> 
+   <section class="contact-section"> 
+    <h1>Contact Me</h1> 
+    <form id="contactForm" novalidate> 
+     <div class="form-group"> <label for="name">Full Name</label> 
+      <input type="text" id="name" data-testid="test-contact-name" required> <small id="error-name" data-testid="test-contact-error-name" aria-describedby="name"></small> 
+     </div> 
+     <div class="form-group"> <label for="email">Email</label> 
+      <input type="email" id="email" data-testid="test-contact-email" required> <small id="error-email" data-testid="test-contact-error-email" aria-describedby="email"></small> 
+     </div> 
+     <div class="form-group"> <label for="subject">Subject</label> 
+      <input type="text" id="subject" data-testid="test-contact-subject" required> <small id="error-subject" data-testid="test-contact-error-subject" aria-describedby="subject"></small> 
+     </div> 
+     <div class="form-group"> <label for="message">Message</label> <textarea id="message" rows="5" data-testid="test-contact-message" required></textarea> <small id="error-message" data-testid="test-contact-error-message" aria-describedby="message"></small> 
+     </div> <button type="submit" data-testid="test-contact-submit">Send Message</button> 
+     <p id="success" data-testid="test-contact-success" style="display:none;">✅ Your message has been sent successfully!</p> 
+    </form> 
+   </section> 
+  </main> 
   <script>
-    const form = document.getElementById("contactForm");
-    const successMsg = document.getElementById("success");
-
-    form.addEventListener("submit", function(e) {
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function (e) {
       e.preventDefault();
 
-      // Reset errors
-      document.querySelectorAll(".error").forEach(el => el.textContent = "");
-      successMsg.textContent = "";
+      const name = document.getElementById('name');
+      const email = document.getElementById('email');
+      const subject = document.getElementById('subject');
+      const message = document.getElementById('message');
+      const success = document.getElementById('success');
 
-      const name = document.getElementById("name").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const subject = document.getElementById("subject").value.trim();
-      const message = document.getElementById("message").value.trim();
+      // clear old errors
+      document.querySelectorAll('small').forEach(s => s.textContent = '');
 
       let valid = true;
 
-      if (name === "") {
-        document.getElementById("error-name").textContent = "Name is required";
+      if (!name.value.trim()) {
+        document.getElementById('error-name').textContent = 'Full name is required';
         valid = false;
       }
-      if (email === "" || !/^[^ ]+@[^ ]+\.[a-z]{2,3}$/.test(email)) {
-        document.getElementById("error-email").textContent = "Enter a valid email";
+
+      const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+      if (!emailPattern.test(email.value.trim())) {
+        document.getElementById('error-email').textContent = 'Please enter a valid email';
         valid = false;
       }
-      if (subject === "") {
-        document.getElementById("error-subject").textContent = "Subject is required";
+
+      if (!subject.value.trim()) {
+        document.getElementById('error-subject').textContent = 'Subject is required';
         valid = false;
       }
-      if (message.length < 10) {
-        document.getElementById("error-message").textContent = "Message must be at least 10 characters";
+
+      if (message.value.trim().length < 10) {
+        document.getElementById('error-message').textContent = 'Message must be at least 10 characters';
         valid = false;
       }
 
       if (valid) {
-        successMsg.textContent = "✅ Message sent successfully!";
+        success.style.display = 'block';
         form.reset();
+      } else {
+        success.style.display = 'none';
       }
     });
-  </script>
-</body>
-</html>
+  </script> 
+ </body>
+                                                                                     </html>
