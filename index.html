@@ -1,40 +1,71 @@
 <!doctype html>
-<html lang="en"> 
- <head> 
-  <meta charset="UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>Profile Card — Treasure Kenule</title> 
-  <link rel="stylesheet" href="styles.css"> 
- </head> 
- <body> 
-  <article data-testid="test-profile-card"> <!-- Name --> 
-   <h2 data-testid="test-user-name">Treasure Kenule</h2> <!-- Bio --> 
-   <p data-testid="test-user-bio">I am a frontend developer and VA learning HTML, CSS &amp; JS.</p> <!-- Current time --> 
-   <p data-testid="test-user-time"></p> <!-- Avatar --> 
-   <figure> 
-    <img data-testid="test-user-avatar" src="https://i.ibb.co/FbNhS4kz/In-Shot-20251016-81043649.jpg" alt="Treasure Kenule Avatar"> 
-   </figure> <!-- Social links --> 
-   <nav data-testid="test-user-social-links"> 
+<html lang="en">   
+ <head>   
+  <meta charset="UTF-8">   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+  <title>Home — Treasure Kenule</title>   
+  <link rel="stylesheet" href="styles.css">   
+ </head>   
+
+ <body>  
+  <!-- ===== Navigation Bar ===== -->
+  <header class="nav"> 
     <ul> 
-     <li><a data-testid="test-user-social-instagram" href=" https://www.instagram.com/kenuletreasure?igsh=MXczZGN0cTRlOXpudQ" target="_blank" rel="noopener noreferrer">Instagram</a></li> 
-     <li><a data-testid="test-user-social-whatsapp" href="https://whatsapp.com/dl/" target="_blank" rel="noopener noreferrer">WhatsApp</a></li> 
-     <li><a data-testid="test-user-social-facebook" href=" https://www.facebook.com/share/1BcRhMurFJ/" target="_blank" rel="noopener noreferrer">Facebook</a></li> 
+      <li><a href="index.html" class="active">Home</a></li> 
+      <li><a href="about.html">About</a></li> 
+      <li><a href="contact.html">Contact</a></li> 
     </ul> 
-   </nav> <!-- Hobbies --> 
-   <section data-testid="test-user-hobbies"> 
-    <ul> 
-     <li>Coding</li> 
-     <li>Reading</li> 
-     <li>Gaming</li> 
-    </ul> 
-   </section> <!-- Dislikes --> 
-   <section data-testid="test-user-dislikes"> 
-    <ul> 
-     <li>Spam emails</li> 
-     <li>Slow internet</li> 
-    </ul> 
-   </section> 
-  </article> 
-  <script src="script.js"></script> 
- </body>
-</html>
+  </header>
+
+  <!-- ===== Profile Card ===== -->
+  <article data-testid="test-profile-card"> 
+    <!-- Name -->   
+    <h2 data-testid="test-user-name">Treasure Kenule</h2> 
+
+    <!-- Bio -->   
+    <p data-testid="test-user-bio">
+      I am a Frontend Developer and Virtual Assistant learning HTML, CSS &amp; JavaScript.
+    </p> 
+
+    <!-- Current time -->   
+    <p data-testid="test-user-time"></p> 
+
+    <!-- Avatar -->   
+    <figure>   
+      <img data-testid="test-user-avatar" 
+           src="https://i.ibb.co/FbNhS4kz/In-Shot-20251016-81043649.jpg" 
+           alt="Treasure Kenule Avatar">   
+    </figure> 
+
+    <!-- Social links -->   
+    <nav data-testid="test-user-social-links">   
+      <ul>   
+        <li><a data-testid="test-user-social-instagram" href="https://www.instagram.com/kenuletreasure?igsh=MXczZGN0cTRlOXpudQ" target="_blank" rel="noopener noreferrer">Instagram</a></li>   
+        <li><a data-testid="test-user-social-whatsapp" href="https://whatsapp.com/dl/" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>   
+        <li><a data-testid="test-user-social-facebook" href="https://www.facebook.com/share/1BcRhMurFJ/" target="_blank" rel="noopener noreferrer">Facebook</a></li>   
+      </ul>   
+    </nav> 
+
+    <!-- Hobbies -->   
+    <section data-testid="test-user-hobbies">   
+      <h3>Hobbies</h3>
+      <ul>   
+        <li>Coding</li>   
+        <li>Reading</li>   
+        <li>Gaming</li>   
+      </ul>   
+    </section> 
+
+    <!-- Dislikes -->   
+    <section data-testid="test-user-dislikes">   
+      <h3>Dislikes</h3>
+      <ul>   
+        <li>Spam emails</li>   
+        <li>Slow internet</li>   
+      </ul>   
+    </section>   
+  </article>   
+
+  <script src="script.js"></script>   
+ </body>  
+ </html>
