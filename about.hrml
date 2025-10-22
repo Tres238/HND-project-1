@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>About Me | Treasure Kenule Portfolio</title> 
+  <link rel="stylesheet" href="styles.css"> 
+ </head> 
+ <body> 
+  <header class="nav"> 
+   <ul> 
+    <li><a href="index.html">Home</a></li> 
+    <li><a href="about.html" class="active">About</a></li> 
+    <li><a href="contact.html">Contact</a></li> 
+   </ul> 
+  </header> 
+  <main data-testid="test-about-page" class="about-page"> 
+   <section data-testid="test-about-bio"> 
+    <h2>My Bio</h2> 
+    <p>Hi, I’m <strong>Treasure Kenule</strong> a passionate frontend developer and virtual assistant with a love for creating clean, responsive, and user-friendly web designs. I started my web development journey in early 2025, and since then, I’ve built several small projects including product cards, landing pages, and a personal portfolio site.</p> 
+   </section> 
+   <section data-testid="test-about-goals"> 
+    <h2>Goals in this Program</h2> 
+    <p>My main goal in the HNG internship is to strengthen my skills in JavaScript, improve my understanding of real-world frontend workflows, and learn to collaborate effectively with other developers. I also want to become confident in solving complex UI challenges independently.</p> 
+   </section> 
+   <section data-testid="test-about-confidence"> 
+    <h2>Areas of Low Confidence</h2> 
+    <p>I’m still building my confidence with advanced JavaScript concepts and debugging. Sometimes, I find it challenging to handle responsive layouts for all screen sizes, but I’m determined to improve through consistent practice.</p> 
+   </section> 
+   <section data-testid="test-about-future-note"> 
+    <h2>Note to My Future Self</h2> 
+    <p>Keep pushing forward, Treasure! Every small project you build is another step toward becoming a professional frontend developer. Never stop learning, and remember how far you’ve come since writing your first line of code!</p> 
+   </section> 
+   <section data-testid="test-about-extra"> 
+    <h2>Extra Thoughts</h2> 
+    <p>This internship has already helped me grow in discipline and teamwork. I look forward to contributing to real projects and building more responsive, accessible, and beautiful web applications.</p> 
+   </section> 
+  </main> 
+  <footer class="footer">
+    © 2025 Treasure Kenule | Frontend Developer 
+  </footer> 
+ </body>
+</html>
