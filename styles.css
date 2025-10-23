@@ -48,7 +48,7 @@ nav a:hover {
     width: 400px; /* slightly wider on tablets/desktops */
     text-align: left; /* align text left */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
     padding: 25px;
