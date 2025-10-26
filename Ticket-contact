@@ -46,7 +46,7 @@
           <h2>Contact Us</h2>
           <p>Fill out the form below and we’ll get back to you as soon as possible.</p>
 
-          <form action="https://formspree.io/f/xqayowag" method="POST" class="contact-form">
+          <form action="https: https://formspree.io/f/xyzbzkkb " method="POST" class="contact-form">
             <div class="form-group">
               <label for="name">Full Name</label>
               <input type="text" id="name" name="name" placeholder="Enter your name" required />
