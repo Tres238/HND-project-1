@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About • TicketEase</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="Ticketease.html">TicketEase</a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="Ticketease.html">Home</a></li>
+            <li><a class="active" href="Ticket-about.html">About</a></li>
+            <li><a href="Ticket-contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero section with wave -->
+    <section class="hero about-hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 class="hero-title">About TicketEase</h1>
+          <p class="lead">We believe managing support tickets should be simple, fast, and user-friendly for everyone — from startups to large teams.</p>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="decor-circle circle-a"></div>
+          <div class="decor-circle circle-b"></div>
+        </div>
+      </div>
+      <svg class="hero-wave" viewBox="0 0 1440 150" preserveAspectRatio="none">
+        <path d="M0,48 C240,150 480,0 720,48 C960,96 1200,0 1440,48 L1440 150 L0 150 Z" />
+      </svg>
+    </section>
+
+    <!-- Main Content -->
+    <main class="about-content">
+      <div class="container">
+        <section class="about-section">
+          <h2>Our Mission</h2>
+          <p>TicketEase was built to simplify customer support workflows. We empower teams to create, track, and resolve issues faster — with clarity and collaboration at the core.</p>
+        </section>
+
+        <section class="about-section">
+          <h2>Our Vision</h2>
+          <p>We envision a world where communication between businesses and customers is seamless. Our platform helps companies stay organized, transparent, and efficient.</p>
+        </section>
+
+        <section class="about-section">
+          <h2>Core Features</h2>
+          <ul class="feature-list">
+            <li>✅ Easy Ticket Creation</li>
+            <li>✅ Real-Time Status Tracking</li>
+            <li>✅ Secure Login & Session Management</li>
+            <li>✅ Mobile-Friendly Interface</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <!-- CTA -->
+    <section class="cta-band">
+      <div class="container">
+        <p class="cta-text">Ready to experience TicketEase?</p>
+        <a href="auth/signup.html" class="btn btn-primary">Get Started</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2025 Treasure Kenule • TicketEase</p>
+        <nav>
+          <ul class="footer-links">
+            <li><a href="Ticketease.html">Home</a></li>
+            <li><a href="Ticket-about.html">About</a></li>
+            <li><a href="Ticket-contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
