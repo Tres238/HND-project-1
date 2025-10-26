@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TicketEase — Manage Tickets Effortlessly</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- Header / Navigation -->
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">TicketEase</a>
+        <nav class="main-nav" role="navigation" aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="auth/login.html">Login</a></li>
+            <li><a class="btn btn-cta" href="auth/signup.html">Get Started</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <main>
+      <section class="hero" aria-label="Hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1 class="hero-title">Manage Support Tickets Effortlessly</h1>
+            <p class="lead">Create, track and resolve tickets faster — built for teams of all sizes. Secure, simple and responsive.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="auth/signup.html">Get Started</a>
+              <a class="btn btn-outline" href="auth/login.html">Login</a>
+            </div>
+          </div>
+
+          <!-- optional illustration or empty space -->
+          <div class="hero-visual" aria-hidden="true">
+            <!-- Decorative circles (pure CSS) -->
+            <div class="decor-circle circle-a" aria-hidden="true"></div>
+            <div class="decor-circle circle-b" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <!-- Inline SVG wave (decorative) -->
+        <svg class="hero-wave" viewBox="0 0 1440 150" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0,48 C240,150 480,0 720,48 C960,96 1200,0 1440,48 L1440 150 L0 150 Z" />
+        </svg>
+      </section>
+
+      <!-- Features -->
+      <section class="features" aria-labelledby="features-heading">
+        <div class="container">
+          <h2 id="features-heading" class="section-title">Why TicketEase?</h2>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">🧾</div>
+              <h3>Create Tickets Easily</h3>
+              <p>Open new support requests quickly with a simple, accessible form.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">📊</div>
+              <h3>Track Progress</h3>
+              <p>See ticket status in real time and follow activities at a glance.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">🔒</div>
+              <h3>Secure Authentication</h3>
+              <p>Sign in with a simulated secure flow — session stored safely in localStorage.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- CTA band -->
+    <section class="cta-band" aria-hidden="false">
+      <div class="container">
+        <p class="cta-text">Ready to organize your support system? Start for free.</p>
+        <a class="btn btn-primary" href="auth/signup.html">Get Started</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <p>© 2025 Treasure Kenule • TicketEase</p>
+        <nav aria-label="Footer links">
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
